@@ -83,3 +83,55 @@ export class AppComponent {
 <!-- ends -->
 <router-outlet></router-outlet>s
 ```
+
+#add bootstrap to angular
+## install npm 
+cd autobody
+c
+## update angular.json, 
+## search for style and add two sections 
+```
+"styles": [ "./node_modules/bootstrap/dist/css/bootstrap.min.css", "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css", "src/styles.css" ],
+```
+
+
+## 2 Open src/app/app.module.ts and add: 
+>1
+import { ButtonsModule } from 'ngx-bootstrap/buttons'; //bootstrap1
+>2
+@NgModule({ ... imports: [ButtonsModule.forRoot(), ... ], ... })
+
+## update app.component.html
+>1
+```
+<!-- bootstrap1 -->
+<button type="button" class="btn btn-primary">
+  Single Button
+</button>
+<!-- ends -->
+```
+
+##adding form groups
+
+```
+import { Component } from '@angular/core';
+import { FormControl,FormGroup } from '@angular/forms'; //form12, form22
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'autobody';
+  name = new FormControl(''); //form12
+
+  //form22
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+  });
+  //ends
+}
+
+```

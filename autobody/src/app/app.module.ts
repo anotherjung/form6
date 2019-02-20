@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms'; //form1
 
+import { ButtonsModule } from 'ngx-bootstrap/buttons'; //bootstrap1
+
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { ReactiveFormsModule } from '@angular/forms'; //form1
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule //form1
+    AppRoutingModule
+    ,ReactiveFormsModule //form1
+    ,ButtonsModule //bootstrap1
   ],
   providers: [],
   bootstrap: [AppComponent]

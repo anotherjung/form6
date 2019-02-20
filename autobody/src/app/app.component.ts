@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms'; //form12
+import { FormControl,FormGroup } from '@angular/forms'; //form12, form22
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,11 @@ import { FormControl } from '@angular/forms'; //form12
 export class AppComponent {
   title = 'autobody';
   name = new FormControl(''); //form12
+
+  //form22
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+  });
+  //ends
 }
