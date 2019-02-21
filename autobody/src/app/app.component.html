@@ -1,15 +1,4 @@
-<!-- form13 -->
-<label>
-  Name:
-  <input type="text" [formControl]="name">
-</label>
-<p>
-  Value: {{ name.value }}
-</p>
-<!-- ends -->
-<!-- bootstrap1 -->
-<button type="button" class="btn btn-primary">
-  Single Button
-</button>
-<!-- endss -->
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <app-fireformgroup></app-fireformgroup>
+    <router-outlet></router-outlet>
+</div>

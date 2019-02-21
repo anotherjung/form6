@@ -135,3 +135,20 @@ export class AppComponent {
 }
 
 ```
+
+# adding firebase
+npm install angularfire2 firebase --save
+npm audit fix --force
+
+>src/environments
+,,,
+  //firebase1
+  ,firebase: {
+    grab api keys from firebase console
+  }
+  //ends
+,,,
+
+# adding fireformgoup
+ng g c fireformgroup
+>see folder 
