@@ -1,4 +1,4 @@
-#form6
+# form6
 ng build new 
 
 >start firebase, firestore, hosting, all defaults, yes single webpage
@@ -53,7 +53,7 @@ export class AppModule { }
 
 ```
 
-##app.component.ts
+## app.component.ts
 ```
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms'; //form12
@@ -70,7 +70,7 @@ export class AppComponent {
 
 ```
 
-##app.component.html 
+## app.component.html 
 ```
 <!-- form13 -->
 <label>
@@ -84,7 +84,8 @@ export class AppComponent {
 <router-outlet></router-outlet>s
 ```
 
-#add bootstrap to angular
+# add bootstrap to angular
+
 ## install npm 
 cd autobody
 c
@@ -95,7 +96,7 @@ c
 ```
 
 
-## 2 Open src/app/app.module.ts and add: 
+## Open src/app/app.module.ts and add: 
 >1
 import { ButtonsModule } from 'ngx-bootstrap/buttons'; //bootstrap1
 >2
@@ -111,7 +112,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons'; //bootstrap1
 <!-- ends -->
 ```
 
-##adding form groups
+## sadding form groups
 
 ```
 import { Component } from '@angular/core';
@@ -136,7 +137,7 @@ export class AppComponent {
 
 ```
 
-# adding firebase
+# adding firebase firestore
 npm install angularfire2 firebase --save
 npm audit fix --force
 

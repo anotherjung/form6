@@ -10,7 +10,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons'; //bootstrap1
 
 import { AngularFireModule } from 'angularfire2';  //form9firebase
 import { environment } from '../environments/environment'; //form9firebase
-import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFirestoreModule } from 'angularfire2/firestore'; //form9firebase
 import { FireformgroupComponent } from './fireformgroup/fireformgroup.component'; //form9firebase
 
 
