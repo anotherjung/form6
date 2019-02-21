@@ -1,4 +1,5 @@
 # form6
+# start new angular app
 ng build new 
 
 >start firebase, firestore, hosting, all defaults, yes single webpage
@@ -87,8 +88,9 @@ export class AppComponent {
 # add bootstrap to angular
 
 ## install npm 
-cd autobody
-c
+cd angular file 
+npm install --save @ng-bootstrap/ng-bootstrap
+
 ## update angular.json, 
 ## search for style and add two sections 
 ```
